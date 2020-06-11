@@ -4,15 +4,22 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: sans-serif;
+}
+
+.section {
+    margin: 2rem;
+}
+
 .products {
     display: flex;
-    justify-content: center;
     text-align: center;
 }
 .product, .item {
     min-width: 20vh;
     min-height: 30vh;
-    border: 1px solid gray;
+    border: 3px solid rgb(67, 92, 172);
     margin: 1rem;
     display: flex;
     flex-direction: column;
@@ -28,6 +35,23 @@
 button {
     margin: 2rem 0.5rem 0.5rem 0.5rem;
     padding: 0.5rem;
+    background: rgb(67, 92, 172);
+    color: white;
+    font-weight: bold;
+    border: none;
     border-radius: 10px;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: rgb(176, 41, 164);
+}
+
+.product-name {
+    margin: 1rem;
+}
+
+.text-center {
+    color: rgb(176, 41, 164);
 }

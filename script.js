@@ -36,3 +36,15 @@ function addToCart(e) {
     cart.appendChild(item);
 }
 
+cart.addEventListener("click", removeItem);
+
+function removeItem(e) {
+    const item = e.target;
+    if (item.classList[0] === "remove") {
+        const removed = item.parentNode;
+        removed.remove();
+    }
+}
+
+
+
