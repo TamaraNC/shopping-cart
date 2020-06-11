@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.product, .item {
+    min-width: 20vh;
+    min-height: 30vh;
+    border: 1px solid gray;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart {
+    display: flex;
+    text-align: center;
+}
+
+button {
+    margin: 2rem 0.5rem 0.5rem 0.5rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
